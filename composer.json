@@ -1,13 +1,14 @@
 {
-    "name": "BrunoRB/SemverPHP",
+    "name": "brunorb/semverphp",
     "version": "1.0.0",
 	"description": "Semantic Versioning 2.0.0 utility library",
     "keywords": [
         "semver",
 		"Semantic Versioning"
     ],
+    "type": "library",
+    "homepage": "https://github.com/BrunoRB/semverphp",
     "license": "MIT",
-    "type": "project",
     "require": {
         "php": ">=7.0.0"
     },
