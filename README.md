@@ -7,7 +7,7 @@ Semantic Versioning 2.0.0 utility library:
 
 ## Installing / Running
 
-    composer require BrunoRB/SemverPHP
+    composer require brunorb/semverphp
     use BrunoRB\SemverPHP;
 
 ## API
