@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace BrunoRB;
 
+/**
+ * Semantic Versioning 2.0.0 utility library.
+ * https://github.com/BrunoRB/semverphp MIT License.
+ */
 class SemverPHP {
 
 	const PATTERN = '/^' .
@@ -37,12 +41,12 @@ class SemverPHP {
 	 *  'buildMetadata' => 'version' || null,
 	 * ]
 	 *
-	 * @throws Exception for invalid $semver
+	 * @throws \Exception for invalid $semver
 	 */
 	static public function split(string $semver): array {
 		$res = preg_match(self::PATTERN, $semver, $m);
 		if ($res !== 1) {
-			throw new Exception("Invalid semver $semver");
+			throw new \Exception("Invalid semver $semver");
 		}
 
 		return [
@@ -63,7 +67,7 @@ class SemverPHP {
 	 *
 	 * @return int 0 if equals, -1 if a less than b, 1 else
 	 *
-	 * @throws Exception for invalid $a || $b
+	 * @throws \Exception for invalid $a || $b
 	 */
 	static public function compare(string $a, string $b): int {
 		$sa = self::split($a);
