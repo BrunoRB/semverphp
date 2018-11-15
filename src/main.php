@@ -15,8 +15,8 @@ class SemverPHP {
 		'(\d|[1-9]\d*)\.(\d|[1-9]\d*)\.(\d|[1-9]\d*)' .
 		// pre-release https://semver.org/#spec-item-9
 		'(-(?:' .
-			'(?:0|[1-9][0-9A-Za-z-]*|[A-Za-z-][0-9A-Za-z-]*)' .
-			'(?:\.(?:[1-9][0-9A-Za-z-]*|[A-Za-z-][0-9A-Za-z-]*|0))*' .
+			'(?:0|[1-9A-Za-z-][0-9A-Za-z-]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*)' .
+			'(?:\\.(?:0|[1-9A-Za-z-][0-9A-Za-z-]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*))*' .
 		'))?' .
 		// build-metadata https://semver.org/#spec-item-10
 		'(\+[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?' .
